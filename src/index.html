@@ -4,11 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script type="module" src="./scripts/firebase.js"></script>
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+ 
+    <div class="authBlock" id="authBlock">
+    
+      <label for="name">Nickname</label>
+      <input type="text" id="name">
+    
+      <label for="email">Email</label>
+      <input type="email" id="email">
+    
+      <label for="password">Password</label>
+      <input type="password" id="password">
+    
+      <button id="registration" type="button">Registration</button>
+      <button id="signIn" type="button">Sign In</button>
+      <button id="signOut" type="button">Sign Out</button>
+      <button id="data_set" type="button">Add Data</button>
+      <button id="data_get" type="button">Get Data</button>
+      <button id="data_delete" type="button">Delete Element</button>
+      <button id="data_get_all">Get all data</button>
+      <button id="data_delete_all" type="button">Delete all Element's</button>
+    
+    </div>
+
   </body>
 </html>
